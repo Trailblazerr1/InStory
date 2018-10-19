@@ -89,12 +89,13 @@ out=[d['name'] for d in keywords][:10]
 print(out)
 
 
-
-# image = 'https://subscription-assets.timeinc.com/current/8423_top1_205_thumb.jpg'
-# api_key = 'acc_2759e045a6b1157'
-# api_secret = '35c33d7b2745f6416f2f0b4cf274042a'
-# response = requests.get('https://api.imagga.com/v1/colors?url={}'.format(image), auth=(api_key, api_secret)).json()
-# colors = response['results'][0]['info']['background_colors']
+image = 'https://subscription-assets.timeinc.com/current/8423_top1_205_thumb.jpg'
+api_key = 'acc_2759e045a6b1157'
+api_secret = '35c33d7b2745f6416f2f0b4cf274042a'
+response = requests.get('https://api.imagga.com/v1/colors?url={}'.format(image), auth=(api_key, api_secret)).json()
+colors = response['results'][0]['info']['background_colors']
 # col = [colors[0]['html_code'], colors[1]['html_code']]
 # print(col)
 
+
+172.20.53.108
