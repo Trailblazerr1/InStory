@@ -1,0 +1,25 @@
+.container
+
+.hashtags
+    display flex
+    flex-wrap: wrap;
+
+.hashtag
+    color: #222222;
+    font-size: 18px;
+    font-weight: 700;
+    /* Text style for "#food" */
+    letter-spacing: 2.57px;
+    margin-top 15px
+    margin-right 20px
+    cursor: pointer
+
+    &:hover {
+        text-decoration: underline;    
+    }
+
+
+.active {
+    composes hashtag
+    color: #7ed321    
+}
