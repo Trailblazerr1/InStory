@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+<!--     <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="manifest" href="/favicon/manifest.json"> -->
+<!--     <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff"> -->
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>InStories</title>
+    <style>
+        /*
+        * The Typekit service used to deliver this font or fonts for use on websites
+        * is provided by Adobe and is subject to these Terms of Use
+        * http://www.adobe.com/products/eulas/tou_typekit. For font license
+        * information, see the list below.
+        *
+        * soleil:
+        *   - http://typekit.com/eulas/00000000000000003b9aef83
+        *   - http://typekit.com/eulas/00000000000000003b9aef84
+        *   - http://typekit.com/eulas/00000000000000003b9aef7a
+        *   - http://typekit.com/eulas/00000000000000003b9aef7e
+        *   - http://typekit.com/eulas/00000000000000003b9aef85
+        *
+        * © 2009-2018 Adobe Systems Incorporated. All Rights Reserved.
+        */
+        /*{"last_published":"2018-05-26 15:28:29 UTC"}*/
+
+        @import url("https://p.typekit.net/p.css?s=1&k=kxq8ndu&ht=tk&f=17001.17003.17004.17005.22624&a=4163317&app=typekit&e=css");
+
+        @font-face {
+        font-family:"soleil";
+        src:url("https://use.typekit.net/af/597914/00000000000000003b9aef83/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/597914/00000000000000003b9aef83/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/597914/00000000000000003b9aef83/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+        font-style:normal;font-weight:700;
+        }
+
+        @font-face {
+        font-family:"soleil";
+        src:url("https://use.typekit.net/af/68de11/00000000000000003b9aef84/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff2"),url("https://use.typekit.net/af/68de11/00000000000000003b9aef84/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff"),url("https://use.typekit.net/af/68de11/00000000000000003b9aef84/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("opentype");
+        font-style:normal;font-weight:800;
+        }
+
+        @font-face {
+        font-family:"soleil";
+        src:url("https://use.typekit.net/af/9cfa01/00000000000000003b9aef7a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/9cfa01/00000000000000003b9aef7a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/9cfa01/00000000000000003b9aef7a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+        font-style:normal;font-weight:300;
+        }
+
+        @font-face {
+        font-family:"soleil";
+        src:url("https://use.typekit.net/af/13b62d/00000000000000003b9aef7e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/13b62d/00000000000000003b9aef7e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/13b62d/00000000000000003b9aef7e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+        font-style:normal;font-weight:400;
+        }
+
+        @font-face {
+        font-family:"soleil";
+        src:url("https://use.typekit.net/af/bad9f1/00000000000000003b9aef85/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("woff2"),url("https://use.typekit.net/af/bad9f1/00000000000000003b9aef85/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("woff"),url("https://use.typekit.net/af/bad9f1/00000000000000003b9aef85/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("opentype");
+        font-style:italic;font-weight:800;
+        }
+
+        .tk-soleil { font-family: "soleil",sans-serif; }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
