@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: soleil, sans-serif;
+  background-color: #fdfdfd;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: soleil, sans-serif;
+}
+
+.container {
+  max-width: 1060px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.no-default-select {
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+h3 {
+  color: rgba(34, 34, 34, 0.2);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* Text style for "Stickers" */
+  letter-spacing: 2px;
+  text-align: left;
+  margin-bottom: 0px;
+}
