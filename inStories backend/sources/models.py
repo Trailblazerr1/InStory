@@ -103,7 +103,7 @@ class ArtcileSource(MediaSource):
 				'top': 0,
 				'left': i.offset_x,
 			})
-		print (res)
+		# print (res)
 		return res
 
 	@property
@@ -136,10 +136,13 @@ class ArtcileSource(MediaSource):
 			},
 		}
 		resp = requests.post(url2, data=json.dumps(data)).json()
-		for keyword in resp['categories'][0]['name'].split('/')[1:]:
-			keywords.append({'name': keyword.lower(), 'salience': 100})
-		keywords = sorted(keywords, key=lambda k: -k['salience'])
-		return [d['name'] for d in keywords][:10]
+		if resp['categories']==[]:
+			return ['Insta']
+		else:
+			for keyword in resp['categories'][0]['name'].split('/')[1:]:
+				keywords.append({'name': keyword.lower(), 'salience': 100})
+			keywords = sorted(keywords, key=lambda k: -k['salience'])
+			return [d['name'] for d in keywords][:20]
 
 	@property
 	def colors(self):
@@ -166,6 +169,7 @@ class ArticleImage(models.Model):
 		if not self.file:
 			self.uuid = uuid.uuid4()
 			image_data = requests.get(self.url).content
+			# print (image_data)
 			image = Image.open(io.BytesIO(image_data))
 			f = io.BytesIO()
 			image.save(f, format='png')
